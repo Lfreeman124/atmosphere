@@ -1,0 +1,154 @@
+@import url("https://coolors.co/fec5bb-fcd5ce-fae1dd-f8edeb-e8e8e4-d8e2dc-ece4db-ffe5d9-ffd7ba-fec89a");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --yantramanav-ff: "Yantramanav", sans-serif;
+  --wind-song: "WindSong", cursive;
+
+  --color-1: #7c6a0a;
+  --color-2: #babd8d;
+  --color-3: #ffdac6;
+  --color-4: #fa9500;
+  --color-5: #eb6424;
+}
+
+Html {
+  font-size: 1.8rem;
+}
+
+body {
+  background-color: var(--color-3);
+  font-family: var(--yantramanav-ff);
+  font-weight: 100;
+}
+
+header {
+  background-color: var(--color-2);
+  border-bottom: 2px dotted var(--color-1);
+  border-top: 2px dotted var(--color-1);
+  width: 100%;
+  height: 20rem;
+  margin-top: 5rem;
+}
+
+h1 {
+  color: var(--color-1);
+  text-align: center;
+  font-size: 10rem;
+  font-family: var(--wind-song);
+  font-weight: 100;
+}
+
+h1::first-letter {
+  font-size: 15rem;
+}
+
+h3 {
+  color: var(--color-1);
+  font-size: 3rem;
+  font-weight: 100;
+  margin-left: 60%;
+  margin-top: -5rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15rem;
+  padding-right: 2rem;
+}
+nav a {
+  color: var(--color-1);
+  font-size: 2.5rem;
+  margin: 5px 10px;
+  padding: 3px 5px;
+  border-radius: 5%;
+  text-decoration-thickness: 1px;
+}
+main {
+  padding: 0 5rem;
+}
+
+.one,
+.two,
+.three,
+.four {
+  background-color: var(--color-2);
+  border: 1px solid var(--color-1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 85%;
+  height: 25rem;
+  margin-bottom: 20rem;
+}
+
+.two,
+.four {
+  float: right;
+  flex-direction: row-reverse;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: var(--color-1);
+  height: 100%;
+  width: 40%;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.dots {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dots p {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  background-color: var(--color-4);
+  color: var(--color-1);
+  font-size: 2rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.image {
+  background-color: var(--color-5);
+  height: 50rem;
+  padding: 2rem;
+  border: 3px solid var(--color-1);
+}
+img {
+  height: 100%;
+  border: 1px solid var(--color-1);
+}
+
+.four a {
+  padding: 5px 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+  background-color: var(--color-1);
+  border-radius: 5%;
+  color: var(--color-5);
+}

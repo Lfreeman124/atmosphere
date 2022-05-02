@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --yantramanav-ff: "Yantramanav", sans-serif;
+  --wind-song: "WindSong", cursive;
+
+  --color-1: #7c6a0a;
+  --color-2: #babd8d;
+  --color-3: #ffdac6;
+  --color-4: #fa9500;
+  --color-5: #eb6424;
+  font-size: 62.5%;
+}
+
+header {
+  font-family: var(--yantramanav-ff);
+  font-weight: 100;
+  padding: 0 5rem;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--color-5);
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: var(--color-5);
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.services {
+  width: 100%;
+  margin-top: 2rem;
+  font-family: var(--yantramanav-ff);
+  color: var(--color-5);
+}
+
+.boxes {
+  background-color: var(--color-2);
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  color: var(--color-3);
+  background-color: var(--color-1);
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  border: black solid 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  height: 40%;
+  font-size: 3rem;
+  border-bottom: 3px var(--color-4) dotted;
+}
+
+.box p {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.blurb {
+  color: var(--color-5);
+  padding: 3rem;
+  background-color: var(--color-3);
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blurb p {
+  margin: 2rem;
+  width: 70%;
+  font-size: 2rem;
+}
+
+.blurb li {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.blurb ul {
+  display: flex;
+}
+
+.contact {
+  width: 60%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact img {
+  height: 5rem;
+  margin: 5rem;
+  cursor: pointer;
+}
+
+.contact p {
+  font-size: 2rem;
+  margin: 5rem;
+  color: var(--color-1);
+}

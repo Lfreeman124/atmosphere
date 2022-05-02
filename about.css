@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --yantramanav-ff: "Yantramanav", sans-serif;
+  --wind-song: "WindSong", cursive;
+
+  --color-1: #7c6a0a;
+  --color-2: #babd8d;
+  --color-3: #ffdac6;
+  --color-4: #fa9500;
+  --color-5: #eb6424;
+}
+
+Html {
+  font-size: 1.8rem;
+}
+
+body {
+  background-color: var(--color-3);
+}
+
+header {
+  font-family: var(--yantramanav-ff);
+  font-weight: 100;
+  padding: 0 5rem;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main {
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--color-1);
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: var(--color-1);
+  font-size: 2rem;
+  text-decoration-thickness: 1px;
+
+  margin: 0 1rem;
+}
+
+img {
+  height: 40rem;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 1px solid var(--color-1);
+}
+
+p {
+  font-family: var(--yantramanav-ff);
+  font-size: 2.5rem;
+  color: var(--color-1);
+  font-weight: 100;
+  height: 30rem;
+  margin: 5rem 0;
+}
+
+.first-character {
+  float: left;
+  font-family: var(--yantramanav-ff);
+  font-size: 8rem;
+  line-height: 3rem;
+  margin-top: -10px;
+}
+
+div {
+  display: flex;
+}
+
+.first-text {
+  margin-right: 10rem;
+  border-radius: 20rem;
+  padding: 10rem 10rem 5rem 10rem;
+  background-image: linear-gradient(
+    to left,
+    #fa9500,
+    20%,
+    #ffdac6,
+    transparent
+  );
+}
+
+.second-text {
+  margin-left: 10rem;
+  border-radius: 20rem;
+  padding: 10rem 5rem 10rem 10rem;
+  background-image: linear-gradient(
+    to right,
+    #eb6424,
+    20%,
+    #ffdac6,
+    transparent
+  );
+}
