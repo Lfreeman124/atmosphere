@@ -51,10 +51,6 @@ nav a {
   display: inline-flex;
 }
 
-.gallery button {
-  cursor: pointer;
-}
-
 .gallery img {
   height: 30rem;
   margin: 1.5rem;
@@ -78,7 +74,7 @@ nav a {
   top: 0;
 }
 
-.sideNav button {
+/* .sideNav button {
   color: var(--color-1);
   margin: 1rem;
   padding: 1rem;
@@ -90,6 +86,57 @@ nav a {
 
 .sideNav button:hover {
   background-color: var(--color-3);
+} */
+
+/* CSS */
+button {
+  margin: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--color-1);
+  box-sizing: border-box;
+  color: var(--color-1);
+  font-family: "Avenir Next LT W01 Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:active {
+  outline: 0;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+button:before {
+  background-color: var(--color-2);
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+button:hover:before {
+  background-color: var(--color-5);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 10px 12px;
+  }
 }
 
 .main {

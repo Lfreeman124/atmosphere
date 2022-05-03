@@ -71,12 +71,14 @@ nav a {
 }
 
 .box h2 {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   width: 50%;
   height: 40%;
   font-size: 3rem;
+  padding: 2rem;
   border-bottom: 3px var(--color-4) dotted;
 }
 
